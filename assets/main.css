@@ -103,19 +103,26 @@ th,td{
 .year{color: #505050; font-size:0.67em; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
-table.navigation{width:100%; text-align: center; border-collapse: collapse;}
-/* Set fixed spacing between tabs */
-tr.navigation {
-    display: flex;
-    justify-content: center; /* Center navigation items */
-    gap: 50px; /* Fixed space between each tab */
+table.navigation {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
 }
 
+/* Distribute tabs evenly across the full width */
+tr.navigation {
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing */
+    width: 100%;
+}
+
+/* Ensure all tabs take equal space */
 td.navigation {
     font-size: 1.67em;
     white-space: nowrap;
     text-align: center;
     vertical-align: middle;
+    flex: 1; /* Makes all tabs take up equal space */
     padding: 10px 0; /* Adjust vertical padding */
 }
 
@@ -154,5 +161,10 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
 }
 
