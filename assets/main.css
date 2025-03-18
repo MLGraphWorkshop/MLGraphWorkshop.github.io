@@ -114,7 +114,7 @@ th,td{
 .title1 {
     color: #b2132e;
     text-shadow: 1px 1px 3px #c0c0c0;
-    font-size: 0.5em; /* Adjust this value to make the text smaller */
+    font-size: 0.7em; /* Adjust this value to make the text smaller */
 }
 .title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;}
 .year{color: #505050; font-size:0.67em; font-weight: lighter;}
