@@ -10,6 +10,40 @@
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
     <title>Conference Template</title>
+    <style>
+        .organizers-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .organizer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 80%;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        .organizer img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .organizer-info {
+            flex: 1;
+        }
+        .organizer-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .organizer-bio {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,6 +77,35 @@
             </td>
         </tr>
     </table>
+
+    <div class="organizers-container">
+        <h2>Organizers</h2>
+
+        <div class="organizer">
+            <img src="assets/organizer1.jpg" alt="Organizer 1">
+            <div class="organizer-info">
+                <div class="organizer-name">Dr. Alice Johnson</div>
+                <div class="organizer-bio">Alice Johnson is a professor at XYZ University, specializing in graph-based machine learning and AI fairness. She has published extensively on explainable AI and its applications in social networks.</div>
+            </div>
+        </div>
+
+        <div class="organizer">
+            <img src="assets/organizer2.jpg" alt="Organizer 2">
+            <div class="organizer-info">
+                <div class="organizer-name">Dr. Bob Smith</div>
+                <div class="organizer-bio">Bob Smith is a principal researcher at ABC Labs, focusing on scalable graph neural networks and their deployment in large-scale industrial applications, including financial fraud detection.</div>
+            </div>
+        </div>
+
+        <div class="organizer">
+            <img src="assets/organizer3.jpg" alt="Organizer 3">
+            <div class="organizer-info">
+                <div class="organizer-name">Dr. Catherine Lee</div>
+                <div class="organizer-bio">Catherine Lee is a senior scientist at DEF Institute, where she leads projects in knowledge graph construction and multimodal learning. She has been actively involved in developing benchmarking datasets for AI research.</div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
