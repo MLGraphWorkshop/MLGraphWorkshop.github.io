@@ -192,3 +192,11 @@ li {
     list-style-type: disc; /* Ensure bullet points appear */
     padding-left: 10px; /* Indent main list items */
 }
+
+.speaker img {
+    width: 120px;
+    height: 120px;
+    border-radius: 0; /* Removes circular effect */
+    margin-right: 20px;
+    object-fit: contain; /* Ensures the entire image fits */
+}
