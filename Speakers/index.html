@@ -10,6 +10,40 @@
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
     <title>Conference Template</title>
+    <style>
+        .speakers-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .speaker {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 80%;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        .speaker img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .speaker-info {
+            flex: 1;
+        }
+        .speaker-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .speaker-bio {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,6 +77,35 @@
             </td>
         </tr>
     </table>
+
+    <div class="speakers-container">
+        <h2>Invited Speakers</h2>
+
+        <div class="speaker">
+            <img src="assets/speaker1.jpg" alt="Speaker 1">
+            <div class="speaker-info">
+                <div class="speaker-name">Prof. Alice Johnson</div>
+                <div class="speaker-bio">Alice Johnson is a leading researcher in graph-based machine learning, specializing in explainable AI. She has contributed extensively to fairness-aware learning and its applications in large-scale social networks.</div>
+            </div>
+        </div>
+
+        <div class="speaker">
+            <img src="assets/speaker2.jpg" alt="Speaker 2">
+            <div class="speaker-info">
+                <div class="speaker-name">Dr. Bob Smith</div>
+                <div class="speaker-bio">Bob Smith is a principal scientist at XYZ Labs, where he pioneers research on scalable GNN architectures and their deployment in financial and cybersecurity applications.</div>
+            </div>
+        </div>
+
+        <div class="speaker">
+            <img src="assets/speaker3.jpg" alt="Speaker 3">
+            <div class="speaker-info">
+                <div class="speaker-name">Dr. Catherine Lee</div>
+                <div class="speaker-bio">Catherine Lee is a professor at ABC University, focusing on knowledge graph reasoning and multimodal learning. She has led numerous projects on AI-driven scientific discovery.</div>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
