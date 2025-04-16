@@ -11,69 +11,35 @@
     <meta name="KeyWords" content="Conference">
     <title>MLoG-GenAI</title>
     <style>
-        .organizers-container {
+        .organizers-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px;
+        }
+
+        .organizers-grid .organizer {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 20px;
-        }
-        .organizer {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            width: 80%;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 15px;
             text-align: center;
+            width: 120px;
         }
-        .organizer img {
+
+        .organizers-grid .organizer img {
             width: 97px;
             height: 120px;
-            border-radius: 0; /* Square shape */
-            margin-right: 20px;
-            object-fit: contain; /* Prevents cropping */
+            object-fit: contain;
+            margin-bottom: 10px;
         }
-        .organizer-info {
-            flex: 1;
-        }
-        .organizer-name {
-            font-size: 18px;
+
+        .organizers-grid .organizer-name {
+            font-size: 16px;
             font-weight: bold;
+            color: #333;
+            text-decoration: none;
         }
-        .organizer-bio {
-            font-size: 14px;
-            color: #555;
-        }
-
-    .organizers-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-        margin: 20px;
-    }
-
-    .organizers-grid .organizer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 120px;
-    }
-    
-    .organizers-grid .organizer img {
-        width: 97px;
-        height: 120px;
-        object-fit: contain;
-        margin-bottom: 10px;
-    }
-    
-    .organizers-grid .organizer-name {
-        font-size: 16px;
-        font-weight: bold;
-        color: #333;
-        text-decoration: none;
-    }
     </style>
 </head>
 
