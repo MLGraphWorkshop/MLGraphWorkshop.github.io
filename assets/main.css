@@ -236,3 +236,41 @@ li {
 .organizer-name:hover {
   color: #007bff;
 }
+
+
+<style>
+    .centered-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .paper-list ol {
+        padding-left: 0;
+        list-style: none;
+        text-align: left;
+    }
+
+    .paper-list li {
+        border-bottom: 2px solid black;
+        padding: 12px 0;
+        margin-bottom: 12px;
+    }
+
+    .paper-title {
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+
+    .authors {
+        margin-left: 1em;
+        font-style: italic;
+        color: #444;
+    }
+
+    /* Optional: Remove the border after the last item */
+    .paper-list li:last-child {
+        border-bottom: none;
+    }
+</style>
+
